@@ -57,8 +57,8 @@ steps:
   - |
     set -x && \
     cd hello-cloudbuild-env && \
-    git config --global user.email wwooww374@gmail.com
-    git config --global user.name zzinny
+    git config --global user.email wwooww374@gmail.com && \
+    git config --global user.name zzinny && \
     git add kubernetes.yaml && \
     git commit -m "Deploying image gcr.io/${PROJECT_ID}/hello-cloudbuild:${SHORT_SHA}
     Built from commit ${COMMIT_SHA} of repository hello-cloudbuild-app
